@@ -1,0 +1,88 @@
+[
+    {
+      "name":"blender LP",
+      "image": "products-images/blender.jpg",
+      "location":"120$"
+    },
+    {
+      "name":"Lenovo ThinkBook 14IML i3 10110U (20RV00B7VN)",
+      "image": "products-images/product6.jpg",
+      "location":"670$"
+    },
+    {
+      "name":"OPPO A92",
+      "image": "products-images/product23.jpg",
+      "location":"320$"
+    },
+    {
+      "name":"DRILL Russell Fox",
+      "image": "products-images/drill.jpg",
+      "location":"240$"
+    },
+    {
+      "name":"Canon EOS 1500D - Kit EF-S 18-55mm IS II",
+      "image": "products-images/product15.jpg",
+      "location":"360$"
+    },
+    {
+      "name":"Canon EOS 200D II Kit 18-55 BK",
+      "image": "products-images/product16.jpg",
+      "location":"89$"
+    },
+    {
+      "name":"SAMSUNG S5",
+      "image": "products-images/product25.jpg",
+      "location":"240$"
+    },
+    {
+      "name":"Beats Studio3 Wireless MX422/ MX432",
+      "image": "products-images/product8.jpg",
+      "location":"360$"
+    },
+    {
+      "name":"Bluetooth Sony WH-XB900N",
+      "image": "products-images/product9.jpg",
+      "location":"500$"
+    },
+    {
+      "name":"keyboard",
+      "image": "products-images/keyboard.jpg",
+      "location":"40$"
+    },
+    {
+      "name":"mouse",
+      "image": "products-images/mouse.jpg",
+      "location":"35$"
+    },
+    {
+      "name":" Toshiba Inverter 9.5 Kg TW-BK105S2V(WS) ",
+      "image": "products-images/toshiba-wash.jpg",
+      "location":"399$"
+    },
+    {
+      "name":" Toshiba 7 Kg AW-A800SV WB ",
+      "image": "products-images/toshiba.jpg",
+      "location":"250$"
+    },
+    {
+      "name":" Kangaroo KG50F62 ",
+      "image": "products-images/fan1.jpg",
+      "location":"120$"
+    },
+    {
+      "name":" Kangaroo KG50F72 ",
+      "image": "products-images/fan2.jpg",
+      "location":"240$"
+    },
+    {
+      "name":"IMAC 2017 128GB (MQD32SA/A)",
+      "image": "products-images/pc-apple.jpg",
+      "location":"1200$"
+    },
+    {
+      "name":"Brother HL-L2366DW Wifi ",
+      "image": "products-images/printer-brother.jpg",
+      "location":"160$"
+    }
+  ]
+  

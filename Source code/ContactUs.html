@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+  
+  <title>ContactUs</title>
+</head>
+
+<body>
+  <div class="page">
+    <!--  -- Header --start -->
+    <header class="header-container" >        
+      <div class="header container">
+        <div class="row">
+          <div class="col-lg-2 col-sm-3 col-md-2 col-xs-12"> 
+            <!--  -- Header Logo -- start--> 
+            <a class="logo" title="Magento Commerce" href="index.html"><img width="100%" alt="Group 3" src="images/logo1.png"></a> 
+            <!-- End Header Logo --> 
+          </div>
+          <div class="col-lg-7 col-sm-4 col-md-6 col-xs-12"> 
+            <!-- Search-col -->
+            <div class="search-box">
+              <form action="index.html"  id="search_mini_form" name="Categories">
+                <select name="category_id" class="cate-dropdown hidden-xs">
+                  <option value="0">All Categories</option>
+                  <option value="36">Camera</option>
+                  <option value="37">Electronics</option>
+                  <option value="42">&nbsp;&nbsp;&nbsp;Cell Phones</option>
+                  <option value="43">&nbsp;&nbsp;&nbsp;Cameras</option>
+                  <option value="44">&nbsp;&nbsp;&nbsp;Laptops</option>
+                  <option value="45">&nbsp;&nbsp;&nbsp;Hard Drives</option>
+                  <option value="46">&nbsp;&nbsp;&nbsp;Monitors</option>
+                  <option value="47">&nbsp;&nbsp;&nbsp;Mouse</option>
+                  <option value="48">&nbsp;&nbsp;&nbsp;Digital Cameras</option>
+                  <option value="38">Desktops</option>
+                  <option value="39">Computer Parts</option>
+                  <option value="40">Televisions</option>
+                  <option value="41">Featured</option>
+                </select>
+                <input type="text" placeholder="Search here..." value="" maxlength="70" class="" name="search" id="search">
+                <button id="submit-button" class="search-btn-bg"><span>Search</span></button>
+              </form>
+            </div>
+            <!-- End Search-col --> 
+          </div>
+          <!-- Top Cart -->
+          <div class="col-lg-3 col-sm-5 col-md-4 col-xs-12">
+            <!--   --add To Cart--start -->
+            <div class="top-cart-contain" style="margin-left: 15px;">
+              <span class="glyphicon glyphicon-shopping-cart my-cart-icon"></span><span class="badge badge-notify my-cart-badge"></span></span>
+            </div>
+            <!--   --add To Cart--end -->
+            <div class="signup"><a title="Login" href="signup.html"><span>Sign up Now</span></a></div>
+            <span class="or"> | </span>
+            <div class="login"><a title="Login" href="login.html"><span>Log In</span></a></div>
+          </div>
+          <!-- End Top Cart --> 
+        </div>
+        <div class="row">
+          <div class="col-lg-2 col-sm-3 col-md-2 col-xs-12"></div>
+          <div class="col-lg-7 col-sm-4 col-md-6 col-xs-12">
+              <ul class="list-group" id="result"></ul>
+          </div>
+          <div class="col-lg-3 col-sm-5 col-md-4 col-xs-12"></div>
+        </div>
+      
+      </div>
+    </header>
+    <!--  -- end header--end --> 
+    <!--  -- Navbar--start -->
+    <nav>
+      <div class="container">
+        <div class="nav-inner"> 
+          <!--    -- mobile-menu --start -->
+          <div class="hidden-desktop" id="mobile-menu">
+            <ul class="navmenu">
+              <li>
+                <div class="menutop">
+                  <div class="toggle"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></div>
+                  <h2>Menu</h2>
+                </div>
+                <ul style="display:none;" class="submenu">
+                  <li>
+                    <ul class="topnav">
+                      <li class="level0 nav-6 level-top first parent"> <a class="level-top" href="index.html"> <span>Home</span> </a> </li>
+                      <li class="level0 nav-6 level-top"> <a class="level-top" href="PC-product.html"> <span>Laptop- PC- Printer- Accessories</span> </a>
+                        <ul class="level0">
+                          <li class="level1 first"><a href="PC-product.html"><span>Laptop</span></a></li>
+                          <li class="level1 nav-10-2"> <a href="PC-product.html"> <span>PC</span> </a> </li>
+                          <li class="level1 nav-10-3"> <a href="PC-product.html"> <span>Printer</span> </a> </li>
+                          <li class="level1 nav-10-4"> <a href="PC-product.html"> <span>Computer Accessories</span> </a> </li>
+                        </ul>
+                      </li>
+                      <li class="level0 nav-7 level-top parent"> <a class="level-top" href="Mobile-product.html"> <span>Mobile - Accessories</span> </a> 
+                        <ul class="level0">
+                          <li class="level1 first"><a href="Mobile-product.html"><span>Mobile</span></a></li>
+                          <li class="level1 nav-10-2"> <a href="Mobile-product.html"> <span>Mobile Accessories</span> </a> </li>
+                        </ul>
+                      </li>
+                      <li class="level0 nav-8 level-top parent"> <a class="level-top" href="Mobile-product.html"> <span>Refrigerator</span> </a> </li>
+                      <li class="level0 parent drop-menu"><a href="Mobile-product.html"><span>Washing Machine</span> </a></li>
+                      <li class="level0 parent drop-menu"><a href="Mobile-product.html"><span>Home Appliances</span> </a>
+                        <ul class="level1">
+                          <li class="level1 first"><a href="Mobile-product.html"><span>Kitchen Appliances</span></a></li>
+                          <li class="level1 nav-10-2"> <a href="Mobile-product.html"> <span>Household Appliances</span> </a> </li>
+                          <li class="level1 nav-10-2"> <a href="Mobile-product.html"> <span>Blender, Squeezer, Press</span> </a> </li>
+                          <li class="level1 nav-10-2"> <a href="Mobile-product.html"> <span>Tools</span> </a> </li>
+                        </ul>
+                      </li>
+                      <li class="level0 nav-9 level-top last parent "> <a class="level-top" href="contact.html"> <span>Contact</span> </a> </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!--navmenu--> 
+          </div>
+          <!--   -- mobile-menu ---end -->
+
+
+          <ul id="nav" class="hidden-xs">
+            <li class="level0 parent drop-menu"><a href="index.html" class="active1"> <span style="font-size: px;" class="glyphicon glyphicon-home"> Home</span> </a> </li>                                      
+            <li class="level0 nav-5 level-top first"> <a class="level-top" href="PC-product.html"> <span>lAPTOP/PC</span> </a>
+              <div style="display:none; width: 900px; margin-left: 92px;" class="level0-wrapper dropdown-6col">
+                <div class="level0-wrapper2">
+                  <!--mega menu-->
+                  <ul class="level3">
+                      <li class="level3 nav-6-1 parent item" style="width: 200px;"> <a href="PC-product.html"><span>Laptop</span></a>      
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>Macbook</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>Asus</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>Hp</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>Dell</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>Lenovo</span></a> </li>
+                        </ul>
+                        <div><img width="90%" src="images/laptop.jpg" alt="Mobiles"></div>
+                      </li>        
+                      <li class="level1 nav-6-1 parent item" style="width: 200px;"> <a href="PC-product.html"><span>PC</span></a> 
+                        <!--sub sub category-->
+                        
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>Apple</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>Dell</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>Acer</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>Asus</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>HP</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                        </ul>
+                        <!--level1--> 
+                        
+                        <!--sub sub category-->
+                        <div><img width="80%" src="images/PC.jpg" alt="Mobiles Accesories"></div>
+                      </li>                     
+                      <li class="level1 nav-6-1 parent item " style="width: 180px;"> <a href="PC-product.html"><span>Printer</span></a> 
+                        <!--sub sub category-->
+                        
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>Canon</span></a> </li>
+                          
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>Brother</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>Epson</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>HP</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                        </ul>
+                        <!--level1--> 
+                        <!--sub sub category-->
+                        <div style="padding-top: 25px;"><img width="90%" src="images/printer.jpg" alt="Audio &amp; Video"></div>
+                      </li>
+                      
+                      <li class="level1 nav-6-1 parent item"> <a href="PC-product.html"><span>Computer accessories</span></a> 
+                          <!--sub sub category-->
+                          
+                          <ul class="level1">
+                            <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>Speaker</span></a> </li>
+                            
+                            <!--level2 nav-6-1-1-->
+                            <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>Mouse</span></a> </li>
+                            <!--level2 nav-6-1-1-->
+                            <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>Keyboard</span></a> </li>
+                            <!--level2 nav-6-1-1-->
+                            <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>USB</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>Portable hard drive</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>Headphones</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>Heat sink base</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="PC-product.html"><span>Network equipment</span></a> </li>
+                            <!--level2 nav-6-1-1-->
+                          </ul>                        
+                        </li>
+                    </ul>
+                    <!--level0--> 
+                  
+                  
+                  
+                </div>
+              </div>
+            </li> 
+            <li class="level0 nav-5 level-top first"> <a class="level-top" href="Mobile-product.html"> <span>Mobiles</span> </a>
+              <div style="display:none; width: 480px; margin-left: 191px;" class="level0-wrapper dropdown-6col">
+                <div class="level0-wrapper2">
+                  <!--mega menu-->
+                  <ul class="level3">
+                      <li class="level3 nav-6-1 parent item" style="width: 200px;"> <a href="Mobile-product.html"><span>Mobile</span></a>      
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Iphone</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Nokia</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Samsung</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Sony</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Lenovo</span></a> </li>
+                        </ul>
+                        <div><img width="90%" src="images/samsung.png" alt="Mobiles"></div>
+                      </li>        
+                      <li class="level1 nav-6-1 parent item" style="width: 200px;"> <a href="Mobile-product.html"><span>Mobile acessories</span></a> 
+                        <!--sub sub category-->
+                        
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Mobile Memory Cards</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Cases & Covers</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Mobile Headphones</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Bluetooth Headsets</span></a> </li>
+                          
+                          <!--level2 nav-6-1-1-->
+                        </ul>
+                        <!--level1--> 
+                        
+                        <!--sub sub category-->
+                        <div><img width="80%" src="images/acessories.jpg" alt="Mobiles Accesories"></div>
+                      </li>                     
+                      
+                    </ul>
+                    <!--level0--> 
+                  
+                  
+                  
+                </div>
+              </div>
+            </li>
+            <li class="level0 parent drop-menu"><a href="Mobile-product.html" class="active1"><span>Refrigerator</span> </a> 
+              <ul class="level1">
+                  <li class="level1"><a href="Mobile-product.html"><span>LG</span></a> </li>
+                  <li class="level1"><a href="Mobile-product.html"><span>Hitachi</span></a> </li>
+                  <li class="level1"><a href="Mobile-product.html"><span>Samsung</span></a> </li>
+                  <li class="level1"><a href="Mobile-product.html"><span>Toshiba</span></a> </li>
+                  <li class="level1"><a href="Mobile-product.html"><span>Panasonic</span></a> </li>
+                  <li class="level1"><a href="Mobile-product.html"><span>Aqua</span></a> </li>
+                  <li class="level1"><a href="Mobile-product.html"><span>Sharp</span></a> </li>
+                  <div><img  style="width: 90%; padding: 15px 0;" src="images/Refrigerator.jpg" alt="Mobiles"></div>
+                </ul>
+            </li>
+            <li class="level0 parent drop-menu"><a href="Mobile-product.html" class="active1"><span>WASHING MACHINE</span> </a> 
+              <ul class="level1">
+                  <li class="level1"><a href="Mobile-product.html"><span>LG</span></a> </li>
+                  <li class="level1"><a href="Mobile-product.html"><span>Electrolux</span></a> </li>
+                  <li class="level1"><a href="Mobile-product.html"><span>Samsung</span></a> </li>
+                  <li class="level1"><a href="Mobile-product.html"><span>Toshiba</span></a> </li>
+                  <li class="level1"><a href="Mobile-product.html"><span>Panasonic</span></a> </li>
+                  <li class="level1"><a href="Mobile-product.html"><span>Aqua</span></a> </li>
+                  <li class="level1"><a href="Mobile-product.html"><span>Sharp</span></a> </li>
+                  <div><img  style="width: 90%; padding: 15px 0;" src="images/washing.jpg" alt="Mobiles"></div>
+                </ul>
+            </li>  
+            <li class="level0 nav-5 level-top first"> <a class="level-top" href="Mobile-product.html"> <span>Home appliances</span> </a>
+              <div style="display:none; width: 900px; margin-left: 191px;" class="level0-wrapper dropdown-6col">
+                <div class="level0-wrapper2">
+                  <!--mega menu-->
+                  <ul class="level3">
+                      <li class="level3 nav-6-1 parent item" style="width: 150px;"> <a href="Mobile-product.html"><span>Kitchen appliances</span></a>      
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Electric cooker</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Microwave</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Induction cooker</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Kitchen infrared</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Pressure cooker</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Oven mitts</span></a> </li>
+                        </ul>
+                        <div style="padding-top: 15px;"><img width="80%" src="images/cooker.jpg" alt="Mobiles"></div>
+                      </li>        
+                      <li class="level1 nav-6-1 parent item" style="width: 200px;"> <a href="Mobile-product.html"><span>Household appliances</span></a> 
+                        <!--sub sub category-->
+                        
+                        <ul class="level1">
+                          
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Vacuum cleaner</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Fans</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Air purifier</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Iron</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Water heater</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Other home appliances</span></a> </li>
+                          
+                          <!--level2 nav-6-1-1-->
+                        </ul>
+                        <!--level1--> 
+                        
+                        <!--sub sub category-->
+                        <div><img width="80%" src="images/fan.jpg" alt=""></div>
+                      </li>  
+                      <li class="level1 nav-6-1 parent item" style="width: 200px;"> <a href="Mobile-product.html"><span>Blender, squeezer, press</span></a> 
+                        <!--sub sub category-->
+                        
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Blender</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Fruit machine</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Coffee maker</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Egg whisk</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Egg whisk</span></a> </li>
+                          
+                          <!--level2 nav-6-1-1-->
+                        </ul>
+                        <!--level1--> 
+                        
+                        <!--sub sub category-->
+                        <div><img width="80%" src="images/Blender.jpg" alt="Mobiles Accesories"></div>
+                      </li>                     
+                      <li class="level1 nav-6-1 parent item" style="width: 200px;"> <a href="Mobile-product.html"><span>Tools</span></a> 
+                        <!--sub sub category-->
+                        
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Drill</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Grinding machine</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Water pumps</span></a> </li>
+                          <!--level2 nav-6-1-1-->
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Bluetooth Headsets</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="Mobile-product.html"><span>Sewing machine</span></a> </li>
+                          
+                          <!--level2 nav-6-1-1-->
+                        </ul>
+                        <!--level1--> 
+                        
+                        <!--sub sub category-->
+                        <div><img width="80%" src="images/drill.jpg" alt="Mobiles Accesories"></div>
+                      </li>                                        
+                      
+                    </ul>
+                    <!--level0--> 
+                  
+                  
+                  
+                </div>
+              </div>
+            </li>
+              
+              
+            <li class="level0 parent drop-menu"><a href="blog.html" class="active1"><span>News</span> </a></li>
+          <li class="level0 parent drop-menu"><a href="ContactUs.html" class="active1"><span>CONTACT US</span> </a> </li>
+          <li class="nav-custom-link level0 level-top parent"> <a class="download-level-top" href="#download-box" ><span>Download Prices</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="download" id="download-box">
+      <div class="row">
+        <div class="col-xs-12 download-title">
+          <h2><span>Welcome to</span></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12"> 
+          <a class="logo" title="Magento Commerce"><img width="450px" alt="Group 3" src="images/logo1.png"></a> 
+        </div>
+      </div>
+      <div class="newsletter">
+        <h4><span>
+          Big sale for you!!!        
+        </span></h4>
+        <br>
+        <h5>
+          Please download list prices and get our gifts to you!!!
+        </h5>
+      </div>
+      <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-4">
+          <ul>
+          <li class="download-select"> <a class="level-top"
+            href="download/Price list Jun_Ext_2020.xlsx" download> <strong><span>Download Now</span></strong> </a></li>
+          </ul>
+          </div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-4">
+          <ul>
+          <li class="download-select"><a class="download-close" href="#"><strong><span>Cancel</span></strong></a></li>	
+        </ul>
+        </div>
+        <div class="col-xs-1"></div>
+      </div> 
+    </div>
+    <!--    --nav --end -->
+    
+    <!--   --ContactUs--start -->
+    <div class="container" style="margin:100px auto;">
+      <div class="row content">
+        <div class="col-sm-8">
+          <h2 style="text-align: center;">Contact Us</h2>
+          <form id="contact" class="form-horizontal" action="index.html" onsubmit="return validation() ">
+
+            <div class="form-group">
+              <label class="control-label col-lg-3">Full Name:*</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" name="username" placeholder="Enter full name">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-lg-3">Company:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" placeholder="Enter full name">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-lg-3">Email:*</label>
+              <div class="col-lg-7">
+                <input type="email" class="form-control" name="mail" placeholder="Enter email">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-lg-3">Phone:*</label>
+              <div class="col-lg-7">
+                <input type="tel" class="form-control" name="phone" placeholder="Enter telephone">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-lg-offset-3 col-lg-7">
+                <label class="radio-inline">
+                  <input type="radio" id="gender" name="gender" checked>Male
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" id="gender" name="gender">Female
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-lg-3" >Comment:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" name="comment">
+                </textarea>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-lg-offset-3 col-lg-7">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-3 p-3 mb-2 bg-warning text-dark bg-danger" style="margin-top: 45px;">
+          <h3>Information</h3>
+          <ul class="nav nav-pills nav-stacked">
+            <li class="first"><a href="sitemap.html" title="Site Map">Site Map</a></li>
+            <li><a href="#/" title="Search Terms">Search Terms</a></li>
+            <li><a href="#" title="Advanced Search">Advanced Search</a></li>
+            <li><a href="ContactUs.html" title="Contact Us">Contact Us</a></li>
+            <li><a href="#" title="Suppliers">Suppliers</a></li>
+            <li class=" last"><a href="#" title="Our stores" class="link-rss">Our stores</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--   --ContactUs--End -->
+  
+  
+    <!--   --footer--start -->
+    <footer class="footer">
+      <div class="footer-middle container">
+        <div class="col-md-3 col-sm-4">
+          <div class="footer-logo"><a href="index.html" title="Logo"><img src="images/logo1.png" width=200px alt="logo"></a>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus diam arcu. </p>
+          <div class="payment-accept">
+            <div><img src="images/payment-1.png" alt="payment"> <img src="images/payment-2.png" alt="payment"> <img
+                src="images/payment-3.png" alt="payment"> <img src="images/payment-4.png" alt="payment"></div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <h4>Information</h4>
+          <ul class="links">
+            <li class="first"><a href="sitemap.html" title="Site Map">Site Map</a></li>
+            <li><a href="#/" title="Search Terms">Search Terms</a></li>
+            <li><a href="#" title="Advanced Search">Advanced Search</a></li>
+            <li><a href="ContactUs.html" title="Contact Us">Contact Us</a></li>
+            <li><a href="#" title="Suppliers">Suppliers</a></li>
+            <li class=" last"><a href="#" title="Our stores" class="link-rss">Our stores</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <h4>Contact us</h4>
+          <div class="contacts-info">
+            <address>
+              <i class="add-icon">&nbsp;</i>123 Main Street, Anytown, <br>
+              &nbsp;CA 12345 India
+            </address>
+            <div class="phone-footer"><i class="phone-icon">&nbsp;</i> +1 800 123 1234</div>
+            <div class="email-footer"><i class="email-icon">&nbsp;</i> <a
+                href="mailto:support@harvelelectric.com">support@harvelelectric.com</a> </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30712057.306560654!2d64.400691212374!3d20.007237393514636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2z4bqkbiDEkOG7mQ!5e0!3m2!1svi!2s!4v1605707099344!5m2!1svi!2s"
+            width="600" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+      </div>
+      <div class="footer-bottom container">
+        <div class="col-sm-5 col-xs-12 coppyright"> &copy; 2020 HarvelElectric. All Rights Reserved.</div>
+        <div class="col-sm-7 col-xs-12 company-links">
+        </div>
+      </div>
+    </footer>
+    <!--   --ContactUs--end -->
+    
+  </div>
+  <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script> 
+  <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script> 
+  <script type="text/javascript" src="js/cloudzoom.js"></script>    
+  <script type="text/javascript" src="js/common.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+
+  <script type="text/javascript" src="js/jquery.mycart.js"></script>
+
+</body>
+</html>
